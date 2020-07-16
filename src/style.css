@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+#front{
+    position: absolute;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    height: 100%;
+}
+
+#scene{
+    width: 100%;
+    height: 100vh;
+}
+#sky{
+    width: 250%;
+    height: 400px;
+    background: #246e89 url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_sky.jpg") repeat-x  100% 100% / auto 100%;
+    background-repeat: repeat-x;
+    top: 0;
+}
+
+#land{
+    width: 200%;
+    height: 100%;
+    background: #eb125d url( "https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_earth.jpg") repeat-x 0 0 /  100% auto;  
+    bottom: 0;
+}
+
+#ground1{
+    position: absolute;
+    top: 300px;
+}
+
+#road{
+    position: absolute;
+    top: 650px;
+}
+
+#ground3{
+    position: absolute;
+    top: 200px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+#tree1{
+    position: absolute;
+    top: -60px;
+}
+#tree2{
+    position: absolute;
+    top: -40px;
+    left: 6400px;
+}
+#knight{
+    position: absolute;
+    top: 120px;
+    left: 4500px;
+}
+#rook-up{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+#rook-down{
+    position: absolute;
+    top: 100px;
+    left: 2000px;
+}
+/* /////////////////////////////////////////////////////////////////////////////// */
+#bush{
+    position: absolute;
+    top: 80px;
+    left: 1000px;
+}
+#alice-queen-sprite {
+    position: absolute;
+    height: 390px;
+    overflow: hidden;
+    left: 700px;
+}
+#rock{
+    width: 180px;
+    position: absolute;
+    top: 80px;
+    right: -2000px;
+}
+/* /////////////////////////////////////////////////////////////////////////////// */
+#pawn{
+    position: absolute;
+    top: 420px;
+    left: 3300px;
+}
+#tree3{
+    position: absolute;
+    left: 500px;
+}
+
+#g-knight{
+    position: absolute;
+    top: 450px;
+    right: 900px;
+}
