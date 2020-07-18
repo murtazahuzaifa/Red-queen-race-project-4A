@@ -31,4 +31,4 @@ jobs:
       run: npm install -g surge
         
     - name: Deloy on surge
-      run: surge ./build red_queen_race_by_murtaza.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+      run: surge ./build red_queen_race_by_murtazaa.surge.sh --token ${{ secrets.SURGE_TOKEN }}
