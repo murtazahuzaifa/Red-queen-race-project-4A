@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useCallback } from 'react';
 import { Ground1 } from './objects/Ground1';
 import { AliceQueenSprite } from './objects/AliceQueenSprite';
 import { Road } from './objects/Road';
@@ -69,7 +69,7 @@ function App() {
         }
     }
 
-    useEffect(() => {
+    const callBack = ()=>{
         document.getAnimations().forEach((animation) => {
             // animation.reverse();
             const time = (animation.effect.getTiming().duration / 100) * 50;
@@ -86,9 +86,8 @@ function App() {
 
         document.addEventListener('click', moveFast);
         document.addEventListener('touchstart', moveFast);
-
-    }, []);
-
+    }
+    useCallback(callBack, [animAliceQueen])();
     return (
         <>
             <div id='front' ></div>
